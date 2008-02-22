@@ -144,6 +144,12 @@ final class UnitConverterMainScreen extends MainScreen
 				main_unit_list.addElement( new  Unit("BTU","Power",1055.0,0.0));
 				main_unit_list.addElement( new  Unit("Kiloton","Power",4184000000000.0,0.0));
 
+				main_unit_list.addElement( new  Unit("Second","Film",1.0,0.0));
+				main_unit_list.addElement( new  Unit("Foot","Film",1.5,0.0));
+				main_unit_list.addElement( new  Unit("Film frame","Film",24,0.0));
+				main_unit_list.addElement( new  Unit("Meter","Film",0.4572,0.0));
+				
+
 				groups = new Hashtable();
 				
 				//Ugly temporary container variables

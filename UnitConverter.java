@@ -145,9 +145,9 @@ final class UnitConverterMainScreen extends MainScreen
 				main_unit_list.addElement( new  Unit("Kiloton","Power",4184000000000.0,0.0));
 
 				main_unit_list.addElement( new  Unit("Second","Film",1.0,0.0));
-				main_unit_list.addElement( new  Unit("Foot","Film",1.5,0.0));
-				main_unit_list.addElement( new  Unit("Film frame","Film",24,0.0));
-				main_unit_list.addElement( new  Unit("Meter","Film",0.4572,0.0));
+				main_unit_list.addElement( new  Unit("Foot","Film",.66666666666666666666,0.0));
+				main_unit_list.addElement( new  Unit("Film frame","Film",1.0/24.0,0.0));
+				main_unit_list.addElement( new  Unit("Meter","Film",2.1872265966,0.0));
 				
 
 				groups = new Hashtable();
@@ -308,7 +308,7 @@ final class AboutScreen extends MainScreen
 {
 	public AboutScreen() {
 		super();
-		add(new RichTextField("BerryUnitConverter (c) 2007 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
+		add(new RichTextField("BerryUnitConverter 1.1 (c) 2007 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
 		add(new RichTextField("http://tomechangosubanana.com/berryunitconverter.\n"));
 		add(new RichTextField("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."));
 	}

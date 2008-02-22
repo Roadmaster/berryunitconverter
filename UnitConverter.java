@@ -98,7 +98,7 @@ final class UnitConverterMainScreen extends MainScreen
 				main_unit_list.addElement( new  Unit("Kilometer","Length",1000,0.0));
 				main_unit_list.addElement( new  Unit("Meter","Length",1.0,0.0));
 				main_unit_list.addElement( new  Unit("Mile","Length",1608.0,0));
-				main_unit_list.addElement( new  Unit("Inch","Length",(100.0/2.54),0));
+				main_unit_list.addElement( new  Unit("Inch","Length",(2.54/100.0),0));
 				main_unit_list.addElement( new  Unit("Centimeter","Length",0.01,0));
 				main_unit_list.addElement( new  Unit("league","Length",4828,0));
 				main_unit_list.addElement( new  Unit("Rod","Length",5.029,0));
@@ -308,7 +308,7 @@ final class AboutScreen extends MainScreen
 {
 	public AboutScreen() {
 		super();
-		add(new RichTextField("BerryUnitConverter 1.1 (c) 2007 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
+		add(new RichTextField("BerryUnitConverter 1.1.1 (c) 2007 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
 		add(new RichTextField("http://tomechangosubanana.com/berryunitconverter.\n"));
 		add(new RichTextField("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."));
 	}

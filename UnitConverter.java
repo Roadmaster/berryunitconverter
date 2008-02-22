@@ -203,11 +203,9 @@ final class UnitConverterMainScreen extends MainScreen
 				add(amountField);
 				amountField.setChangeListener(this);
 
-
 				quantityField = new ObjectChoiceField("Group:",magnitudes,0 );
 				quantityField.setChangeListener(this);
 				add(quantityField);
-
 
 				fromUnitField = new ObjectChoiceField("Convert from:", null);
 				
@@ -249,8 +247,18 @@ final class UnitConverterMainScreen extends MainScreen
 			updateConversion();
 		}
 
+		// Swaps the units; from becomes to, to becomes from.
+		private void swapUnits(){
+			int fromIndex = fromUnitField.getSelectedIndex();
+			int toIndex   = toUnitField.getSelectedIndex();
 
-		public void updateConversion(){
+			fromUnitField.setSelectedIndex(toIndex);
+			toUnitField.setSelectedIndex(fromIndex);
+			updateConversion();
+		}
+
+
+		private void updateConversion(){
 			try{
 				float to_convert = Float.parseFloat(amountField.getText());	
 				float converted = Converter.convert( 
@@ -279,11 +287,19 @@ final class UnitConverterMainScreen extends MainScreen
 			}
 		};
 
+		private MenuItem _swapItem = new MenuItem("Swap",150,10) {
+			public void run() {
+				swapUnits();
+			}
+		};
+		
 		//override makeMenu to add the new menu items
 		protected void makeMenu( Menu menu, int instance )
 		{
 			menu.add(_closeItem);
 			menu.add(_aboutItem);
+			menu.add(_swapItem);
+				
 		}
 
 }

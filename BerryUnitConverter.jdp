@@ -1,0 +1,46 @@
+## RIM Java Development Environment
+# RIM Project file
+AlwaysBuild=0
+[AlxImports
+]
+AutoRestart=0
+[ClassProtection
+]
+[CustomBuildFiles
+]
+[CustomBuildRules
+]
+[DefFiles
+]
+[DependsOn
+]
+Description=Unit converter for Blackberry (API 4.3.0)
+ExcludeFromBuildAll=0
+[Files
+com\roadmaster\berryunitconverter.png
+com\roadmaster\Quantity.java
+com\roadmaster\UnitConverter.java
+]
+HaveAlxImports=0
+HaveDefs=0
+HaveImports=0
+[Icons
+com\roadmaster\berryunitconverter.png
+]
+[ImplicitRules
+]
+[Imports
+]
+Listing=0
+Options=-quiet
+OutputFileName=BerryUnitConverter
+[PackageProtection
+]
+RibbonPosition=0
+RunOnStartup=0
+StartupTier=7
+SystemModule=0
+Title=BerryUnitConverter
+Type=0
+Vendor=tomechangosubanana.com
+Version=1.1.1

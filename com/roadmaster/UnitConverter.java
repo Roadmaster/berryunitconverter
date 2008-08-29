@@ -1,9 +1,10 @@
 /*
  * BerryUnitConverter.java
  *
- * Copyright Daniel Manrique (roadmr@tomechangosubanana.com),2007
- * This program converts from/to measurement units. Its official name is BerryUnitConverter
- but a full name should be "blackberry unit converter". A webpage is at http://tomechangosubanana.com/berryunitconverter
+ * Copyright Daniel Manrique (roadmr@tomechangosubanana.com),2007 This program
+ * converts from/to measurement units. Its official name is BerryUnitConverter
+ but a full name should be "blackberry unit converter". A webpage is at
+http://tomechangosubanana.com/berryunitconverter
  
 
 This program is free software; you can redistribute it and/or
@@ -223,11 +224,10 @@ final class UnitConverterMainScreen extends MainScreen
 				fromUnitField.setChangeListener(this);
 		}
 
-		//override the onClose() method to display a dialog box to the user
-		//with "Goodbye!" when the application is closed
+		//override the onClose() method, even though we
+		//don't do anything special here.
 		public boolean onClose()
 		{
-			//Dialog.alert("Goodbye!");
 			System.exit(0);
 			return true;
 		}

@@ -1,7 +1,8 @@
 /*
-* Copyright Daniel Manrique (roadmr@tomechangosubanana.com),2007
- * Helper class for a program that  converts from/to measurement units. Its official name is BerryUnitConverter
- but a full name should be "blackberry unit converter". A webpage is at http://tomechangosubanana.com/berryunitconverter
+* Copyright Daniel Manrique (roadmr@tomechangosubanana.com),2007 Helper class
+* for a program that  converts from/to measurement units. Its official name is
+* BerryUnitConverter but a full name should be "blackberry unit converter". A
+* webpage is at http://tomechangosubanana.com/berryunitconverter
  
 
 This program is free software; you can redistribute it and/or

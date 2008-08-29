@@ -40,7 +40,7 @@ class TestConversion{
 				}
 			}
 
-			// iterar llaves
+			// iterate keys
 			for (Iterator it = grupos.keySet().iterator(); it.hasNext();){
 				Object nombregrupo= it.next();
 				System.out.println(nombregrupo);

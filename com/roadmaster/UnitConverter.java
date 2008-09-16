@@ -96,6 +96,18 @@ final class UnitConverterMainScreen extends MainScreen
 				main_unit_list.addElement( new  Unit("Fahrenheit",	"Temperature",5.0/9.0,-(160.0/9.0)));
 				main_unit_list.addElement( new  Unit("Kelvin",		"Temperature",1.0,-273.0));
 			
+				main_unit_list.addElement( new  Unit("Kilometers per Hour","Speed",1000.0/3600,0.0));
+				main_unit_list.addElement( new  Unit("Miles per Hour","Speed",(1608.0/3600.0) ,0.0));
+				main_unit_list.addElement( new  Unit("Meters per Second","Speed",1.0,0.0));
+				main_unit_list.addElement( new  Unit("Miles per Second","Speed",1608.0,0.0));
+				main_unit_list.addElement( new  Unit("Kilometers per Second","Speed",1000.0,0.0));
+			
+			
+				main_unit_list.addElement( new  Unit("Newton-meters","Torque",1.0,0.0));
+				main_unit_list.addElement( new  Unit("Foot-pounds","Torque",1/.7476,0.0));
+				main_unit_list.addElement( new  Unit("Kilogram-meters","Torque",1/0.1020,0.0));
+				main_unit_list.addElement( new  Unit("Inch-pounds","Torque",1/8.8508,0.0));
+
 				main_unit_list.addElement( new  Unit("Kilometer","Length",1000,0.0));
 				main_unit_list.addElement( new  Unit("Meter","Length",1.0,0.0));
 				main_unit_list.addElement( new  Unit("Mile","Length",1608.0,0));
@@ -308,7 +320,7 @@ final class AboutScreen extends MainScreen
 {
 	public AboutScreen() {
 		super();
-		add(new RichTextField("BerryUnitConverter 1.1.1 (c) 2007 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
+		add(new RichTextField("BerryUnitConverter 1.2 (c) 2007-2008 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
 		add(new RichTextField("http://tomechangosubanana.com/berryunitconverter.\n"));
 		add(new RichTextField("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."));
 	}

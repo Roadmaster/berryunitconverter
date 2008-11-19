@@ -1,6 +1,6 @@
-MIDlet-Version: 1.1
+MIDlet-Version: 1.2.1
 MIDlet-Name: BerryUnitConverter
 MIDlet-Description: Unit converter for Blackberry (API 4.3.0)
 MIDlet-Vendor: tomechangosubanana 
 RIM-COD-URL-1: BerryUnitConverter.cod
-RIM-COD-Size-1:13104
+RIM-COD-Size-1:13680

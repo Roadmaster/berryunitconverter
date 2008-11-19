@@ -87,8 +87,8 @@ final class UnitConverterMainScreen extends MainScreen
 				main_unit_list.addElement( new  Unit("Carat","Weight",0.0002,0.0));
 				main_unit_list.addElement( new  Unit("Miligram","Weight",0.000001,0.0));
 				main_unit_list.addElement( new  Unit("Pound","Weight",0.45,0.0));
-				main_unit_list.addElement( new  Unit("Stone","Weight",0.45,0.0));
-				main_unit_list.addElement( new  Unit("Ounce","Weight",0.45,0.0));
+				main_unit_list.addElement( new  Unit("Stone","Weight",6.35,0.0));
+				main_unit_list.addElement( new  Unit("Ounce","Weight",0.028,0.0));
 				main_unit_list.addElement( new  Unit("Arroba","Weight",11.5023,0.0));
 				main_unit_list.addElement( new  Unit("Quintal","Weight",4.0*11.5023,0.0));
 				
@@ -320,7 +320,7 @@ final class AboutScreen extends MainScreen
 {
 	public AboutScreen() {
 		super();
-		add(new RichTextField("BerryUnitConverter 1.2 (c) 2007-2008 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
+		add(new RichTextField("BerryUnitConverter 1.2.1 (c) 2007-2008 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
 		add(new RichTextField("http://tomechangosubanana.com/berryunitconverter.\n"));
 		add(new RichTextField("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."));
 	}

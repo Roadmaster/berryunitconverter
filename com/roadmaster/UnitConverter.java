@@ -92,15 +92,15 @@ final class UnitConverterMainScreen extends MainScreen
 			// then implementing logic to classify them by magnitude.
 			Vector main_unit_list= new Vector();
 
-			main_unit_list.addElement( new  Unit("Kilogram","Weight",1.0,0.0));
-			main_unit_list.addElement( new  Unit("Gram","Weight",0.001,0.0));
-			main_unit_list.addElement( new  Unit("Carat","Weight",0.0002,0.0));
-			main_unit_list.addElement( new  Unit("Miligram","Weight",0.000001,0.0));
-			main_unit_list.addElement( new  Unit("Pound","Weight",0.45,0.0));
-			main_unit_list.addElement( new  Unit("Stone","Weight",6.35,0.0));
-			main_unit_list.addElement( new  Unit("Ounce","Weight",0.028,0.0));
-			main_unit_list.addElement( new  Unit("Arroba","Weight",11.5023,0.0));
-			main_unit_list.addElement( new  Unit("Quintal","Weight",4.0*11.5023,0.0));
+			main_unit_list.addElement( new  Unit("Kilogram","Weight",1000.0,0.0));
+			main_unit_list.addElement( new  Unit("Gram","Weight",1.0,0.0));
+			main_unit_list.addElement( new  Unit("Carat","Weight",0.2,0.0));
+			main_unit_list.addElement( new  Unit("Miligram","Weight",0.001,0.0));
+			main_unit_list.addElement( new  Unit("Pound","Weight",450.0,0.0));
+			main_unit_list.addElement( new  Unit("Stone","Weight",6350.29318,0.0));
+			main_unit_list.addElement( new  Unit("Ounce","Weight",28.0,0.0));
+			main_unit_list.addElement( new  Unit("Arroba","Weight",11500.23,0.0));
+			main_unit_list.addElement( new  Unit("Quintal","Weight",4.0*11500.23,0.0));
 
 			main_unit_list.addElement( new  Unit("Celsius",         "Temperature",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Fahrenheit",      "Temperature",5.0/9.0,-(160.0/9.0)));
@@ -111,6 +111,12 @@ final class UnitConverterMainScreen extends MainScreen
 			main_unit_list.addElement( new  Unit("Meters per Second","Speed",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Miles per Second","Speed",1608.0,0.0));
 			main_unit_list.addElement( new  Unit("Kilometers per Second","Speed",1000.0,0.0));
+
+			main_unit_list.addElement( new  Unit("Newton","Force",1.0,0.0));
+			main_unit_list.addElement( new  Unit("Pounds Force","Force",4.44822162,0.0));
+			main_unit_list.addElement( new  Unit("Kilograms Force","Force",9.80665,0.0));
+			main_unit_list.addElement( new  Unit("Dynes","Force",0.000001,0.0));
+			main_unit_list.addElement( new  Unit("Kilo-Newton","Force",1000.0,0.0));
 
 
 			main_unit_list.addElement( new  Unit("Newton-meters","Torque",1.0,0.0));
@@ -349,7 +355,7 @@ final class AboutScreen extends MainScreen
 {
 	public AboutScreen() {
 		super();
-		add(new RichTextField("BerryUnitConverter 1.3 (c) 2007-2009 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
+		add(new RichTextField("BerryUnitConverter 1.4 (c) 2007-2009 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
 		add(new RichTextField("http://tomechangosubanana.com/berryunitconverter.\n"));
 		add(new RichTextField("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."));
 	}

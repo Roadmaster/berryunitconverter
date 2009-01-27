@@ -96,9 +96,9 @@ final class UnitConverterMainScreen extends MainScreen
 			main_unit_list.addElement( new  Unit("Gram","Weight",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Carat","Weight",0.2,0.0));
 			main_unit_list.addElement( new  Unit("Miligram","Weight",0.001,0.0));
-			main_unit_list.addElement( new  Unit("Pound","Weight",450.0,0.0));
+			main_unit_list.addElement( new  Unit("Pound","Weight",453.5924,0.0));
 			main_unit_list.addElement( new  Unit("Stone","Weight",6350.29318,0.0));
-			main_unit_list.addElement( new  Unit("Ounce","Weight",28.0,0.0));
+			main_unit_list.addElement( new  Unit("Ounce","Weight",28.34952,0.0));
 			main_unit_list.addElement( new  Unit("Arroba","Weight",11500.23,0.0));
 			main_unit_list.addElement( new  Unit("Quintal","Weight",4.0*11500.23,0.0));
 
@@ -107,74 +107,100 @@ final class UnitConverterMainScreen extends MainScreen
 			main_unit_list.addElement( new  Unit("Kelvin",          "Temperature",1.0,-273.0));
 
 			main_unit_list.addElement( new  Unit("Kilometers per Hour","Speed",1000.0/3600,0.0));
-			main_unit_list.addElement( new  Unit("Miles per Hour","Speed",(1608.0/3600.0) ,0.0));
+			main_unit_list.addElement( new  Unit("Miles per Hour","Speed",(1609.344/3600.0) ,0.0));
 			main_unit_list.addElement( new  Unit("Meters per Second","Speed",1.0,0.0));
-			main_unit_list.addElement( new  Unit("Miles per Second","Speed",1608.0,0.0));
+			main_unit_list.addElement( new  Unit("Meters per Minute","Speed",1.0/60.0,0.0));
+			main_unit_list.addElement( new  Unit("Meters per Hour","Speed",1.0/3600.0,0.0));
+			main_unit_list.addElement( new  Unit("Miles per Second","Speed",1609.344,0.0));
 			main_unit_list.addElement( new  Unit("Kilometers per Second","Speed",1000.0,0.0));
+			main_unit_list.addElement( new  Unit("Feet per Hour","Speed",0.3048/3600.0,0.0));
+			main_unit_list.addElement( new  Unit("Feet per Minute","Speed",0.3048/60.0,0.0));
+			main_unit_list.addElement( new  Unit("Feet per Second","Speed",0.3048,0.0));
+			main_unit_list.addElement( new  Unit("Light Speed","Speed",299792500.0,0.0));
+			main_unit_list.addElement( new  Unit("Mach","Speed",331.46,0.0));
+			main_unit_list.addElement( new  Unit("Knots","Speed",0.5144444,0.0));
 
 			main_unit_list.addElement( new  Unit("Newton","Force",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Pounds Force","Force",4.44822162,0.0));
 			main_unit_list.addElement( new  Unit("Kilograms Force","Force",9.80665,0.0));
-			main_unit_list.addElement( new  Unit("Dynes","Force",0.000001,0.0));
+			main_unit_list.addElement( new  Unit("Dynes","Force",0.00001,0.0));
 			main_unit_list.addElement( new  Unit("Kilo-Newton","Force",1000.0,0.0));
-
+			main_unit_list.addElement( new  Unit("Ounce Force","Force",0.2780139,0.0));
 
 			main_unit_list.addElement( new  Unit("Newton-meters","Torque",1.0,0.0));
-			main_unit_list.addElement( new  Unit("Foot-pounds","Torque",1/.7476,0.0));
-			main_unit_list.addElement( new  Unit("Kilogram-meters","Torque",1/0.1020,0.0));
-			main_unit_list.addElement( new  Unit("Inch-pounds","Torque",1/8.8508,0.0));
+			main_unit_list.addElement( new  Unit("Foot-pounds","Torque",1.355818,0.0));
+			main_unit_list.addElement( new  Unit("Kilogram-meters","Torque",9.80665,0.0));
+			main_unit_list.addElement( new  Unit("Inch-pounds","Torque",1.355818/12.0,0.0));
 
 			main_unit_list.addElement( new  Unit("Kilometer","Length",1000,0.0));
 			main_unit_list.addElement( new  Unit("Meter","Length",1.0,0.0));
-			main_unit_list.addElement( new  Unit("Mile","Length",1608.0,0));
+			main_unit_list.addElement( new  Unit("Mile","Length",1609.344,0));
 			main_unit_list.addElement( new  Unit("Inch","Length",(2.54/100.0),0));
 			main_unit_list.addElement( new  Unit("Centimeter","Length",0.01,0));
 			main_unit_list.addElement( new  Unit("league","Length",4828,0));
-			main_unit_list.addElement( new  Unit("Rod","Length",5.029,0));
+			main_unit_list.addElement( new  Unit("Rod","Length",5.02921,0));
 			main_unit_list.addElement( new  Unit("Yard","Length",0.9144,0));
 			main_unit_list.addElement( new  Unit("Foot","Length",0.3048,0));
 			main_unit_list.addElement( new  Unit("Hand","Length",0.1016,0));
-
+			main_unit_list.addElement( new  Unit("Nautical Mile","Length",1852.0,0));
 
 			main_unit_list.addElement( new  Unit("Liter","Volume",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Cubic meter","Volume",1000,0.0));
 			main_unit_list.addElement( new  Unit("mililiter","Volume",.001,0.0));
-			main_unit_list.addElement( new  Unit("Gallon","Volume",3.785,0.0));
-			main_unit_list.addElement( new  Unit("Quart","Volume",0.9464,0.0));
-			main_unit_list.addElement( new  Unit("Pint","Volume",0.4732,0.0));
-			main_unit_list.addElement( new  Unit("Fl. Ounce","Volume",0.02957,0.0));
+			main_unit_list.addElement( new  Unit("Gallon (US)","Volume",3.785412,0.0));
+			main_unit_list.addElement( new  Unit("Quart","Volume",0.9463529,0.0));
+			main_unit_list.addElement( new  Unit("Pint","Volume",0.4731765,0.0));
+			main_unit_list.addElement( new  Unit("Fl. Ounce","Volume",0.02957353,0.0));
 			main_unit_list.addElement( new  Unit("Bushel","Volume",35.24,0.0));
 			main_unit_list.addElement( new  Unit("Arroba","Volume",16.133,0.0));
+			main_unit_list.addElement( new  Unit("Cubic Feet","Volume",28.31685,0.0));
+			main_unit_list.addElement( new  Unit("Cubic Inches","Volume",0.01638706,0.0));
+			main_unit_list.addElement( new  Unit("Cubic Yards","Volume",764.5549,0.0));
+			main_unit_list.addElement( new  Unit("Cups","Volume",0.2365882,0.0));
+			main_unit_list.addElement( new  Unit("Gallon (UK)","Volume",4.546092,0.0));
+			main_unit_list.addElement( new  Unit("Ounces (UK)","Volume",0.02841307,0.0));
+			main_unit_list.addElement( new  Unit("Tablespoon","Volume",0.01478676,0.0));
+			main_unit_list.addElement( new  Unit("Teaspoon","Volume",0.004928922,0.0));
+
 
 			main_unit_list.addElement( new  Unit("Square meter","Area",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Square kilometer","Area",1000000.0,0.0));
 			main_unit_list.addElement( new  Unit("Hectare","Area",10000.0,0.0));
 			main_unit_list.addElement( new  Unit("Square centimeter","Area",0.0001,0.0));
 			main_unit_list.addElement( new  Unit("Square millimeter","Area",0.000001,0.0));
-			main_unit_list.addElement( new  Unit("Square mile","Area",2590000,0.0));
-			main_unit_list.addElement( new  Unit("Acre","Area",4047.0,0.0));
-			main_unit_list.addElement( new  Unit("Square foot","Area",.0929,0.0));
-			main_unit_list.addElement( new  Unit("Square inch","Area",0.0006452,0.0));
+			main_unit_list.addElement( new  Unit("Square mile","Area",2589988,0.0));
+			main_unit_list.addElement( new  Unit("Acre","Area",4046.873,0.0));
+			main_unit_list.addElement( new  Unit("Square foot","Area",0.09290304,0.0));
+			main_unit_list.addElement( new  Unit("Square inch","Area",0.00064516,0.0));
+			main_unit_list.addElement( new  Unit("Square Yard","Area",0.8361274,0.0));
 
 			main_unit_list.addElement( new  Unit("Pascal","Pressure",1.0,0.0));
 			main_unit_list.addElement( new  Unit("kilopascal","Pressure",1000,0.0));
 			main_unit_list.addElement( new  Unit("Bar","Pressure",100000,0.0));
-			main_unit_list.addElement( new  Unit("psi","Pressure",6895.0,0.0));
-			main_unit_list.addElement( new  Unit("kg/cm2","Pressure",0.00001019716,0.0));
-			main_unit_list.addElement( new  Unit("torr","Pressure",0.007500638,0.0));
+			main_unit_list.addElement( new  Unit("psi","Pressure",6894.757,0.0));
+			main_unit_list.addElement( new  Unit("kg/cm2","Pressure",98066.14,0.0));
+			main_unit_list.addElement( new  Unit("torr","Pressure",133.3224,0.0));
+			main_unit_list.addElement( new  Unit("Atmospheres","Pressure",101325.0,0.0));
+			main_unit_list.addElement( new  Unit("Cm Mercury","Pressure",1333.224,0.0));
+			main_unit_list.addElement( new  Unit("Inches Mercury","Pressure",3386.388,0.0));
 
 			main_unit_list.addElement( new  Unit("Watt","Power",1.0,0.0));
 			main_unit_list.addElement( new  Unit("Kilowatt","Power",1000,0.0));
 			main_unit_list.addElement( new  Unit("Horsepower","Power",745.7,0.0));
+			main_unit_list.addElement( new  Unit("BTU per Second","Power",1054.118,0.0));
+			main_unit_list.addElement( new  Unit("BTU per Minute","Power",1054.118/60.0,0.0));
+			main_unit_list.addElement( new  Unit("BTU per Hour","Power",1054.118/3600.0,0.0));
+			main_unit_list.addElement( new  Unit("Calories per Second","Power",4.183076,0.0));
+			main_unit_list.addElement( new  Unit("Foot-pound per Second","Power",1.355818,0.0));
 
-			main_unit_list.addElement( new  Unit("Joule","Power",1.0,0.0));
-			main_unit_list.addElement( new  Unit("Calorie","Power",4.187,0.0));
-			main_unit_list.addElement( new  Unit("Kilowatt hour","Power",3600000.0,0.0));
-			main_unit_list.addElement( new  Unit("BTU","Power",1055.0,0.0));
-			main_unit_list.addElement( new  Unit("Kiloton","Power",4184000000000.0,0.0));
+			main_unit_list.addElement( new  Unit("Joule","Energy",1.0,0.0));
+			main_unit_list.addElement( new  Unit("Calorie","Energy",4.1868,0.0));
+			main_unit_list.addElement( new  Unit("Kilowatt hour","Energy",3600000.0,0.0));
+			main_unit_list.addElement( new  Unit("BTU","Energy",1055.056,0.0));
+			main_unit_list.addElement( new  Unit("Kiloton","Energy",4184000000000.0,0.0));
 
 			main_unit_list.addElement( new  Unit("Second","Film",1.0,0.0));
-			main_unit_list.addElement( new  Unit("Foot","Film",.66666666666666666666,0.0));
+			main_unit_list.addElement( new  Unit("Foot","Film",0.66666666666666666666,0.0));
 			main_unit_list.addElement( new  Unit("Film frame","Film",1.0/24.0,0.0));
 			main_unit_list.addElement( new  Unit("Meter","Film",2.1872265966,0.0));
 

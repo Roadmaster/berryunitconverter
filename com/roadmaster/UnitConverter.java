@@ -101,6 +101,7 @@ final class UnitConverterMainScreen extends MainScreen
                         main_unit_list.addElement( new  Unit("Ounce","Weight",28.34952,0.0));
                         main_unit_list.addElement( new  Unit("Arroba","Weight",11500.23,0.0));
                         main_unit_list.addElement( new  Unit("Quintal","Weight",4.0*11500.23,0.0));
+                        main_unit_list.addElement( new  Unit("Pennyweight","Weight",1.55517384,0.0));
 
                         main_unit_list.addElement( new  Unit("Celsius",         "Temperature",1.0,0.0));
                         main_unit_list.addElement( new  Unit("Fahrenheit",      "Temperature",5.0/9.0,-(160.0/9.0)));
@@ -137,6 +138,10 @@ final class UnitConverterMainScreen extends MainScreen
                         main_unit_list.addElement( new  Unit("Mile","Length",1609.344,0));
                         main_unit_list.addElement( new  Unit("Inch","Length",(2.54/100.0),0));
                         main_unit_list.addElement( new  Unit("Centimeter","Length",0.01,0));
+                        main_unit_list.addElement( new  Unit("Millimeter","Length",0.001,0));
+                        main_unit_list.addElement( new  Unit("Micrometer","Length",0.000001,0));
+                        main_unit_list.addElement( new  Unit("Nanometer","Length",0.000000001,0));
+
                         main_unit_list.addElement( new  Unit("league","Length",4828,0));
                         main_unit_list.addElement( new  Unit("Rod","Length",5.02921,0));
                         main_unit_list.addElement( new  Unit("Yard","Length",0.9144,0));

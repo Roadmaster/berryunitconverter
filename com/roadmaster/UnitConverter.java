@@ -154,7 +154,8 @@ final class UnitConverterMainScreen extends MainScreen
                         main_unit_list.addElement( new  Unit("mililiter","Volume",.001,0.0));
                         main_unit_list.addElement( new  Unit("Gallon (US)","Volume",3.785412,0.0));
                         main_unit_list.addElement( new  Unit("Quart","Volume",0.9463529,0.0));
-                        main_unit_list.addElement( new  Unit("Pint","Volume",0.4731765,0.0));
+                        main_unit_list.addElement( new  Unit("Pint (US)","Volume",0.4731765,0.0));
+                        main_unit_list.addElement( new  Unit("Pint (UK)","Volume",0.568261485,0.0));
                         main_unit_list.addElement( new  Unit("Fl. Ounce","Volume",0.02957353,0.0));
                         main_unit_list.addElement( new  Unit("Bushel","Volume",35.24,0.0));
                         main_unit_list.addElement( new  Unit("Arroba","Volume",16.133,0.0));
@@ -174,7 +175,7 @@ final class UnitConverterMainScreen extends MainScreen
                         main_unit_list.addElement( new  Unit("Square centimeter","Area",0.0001,0.0));
                         main_unit_list.addElement( new  Unit("Square millimeter","Area",0.000001,0.0));
                         main_unit_list.addElement( new  Unit("Square mile","Area",2589988,0.0));
-                        main_unit_list.addElement( new  Unit("Acre","Area",4046.873,0.0));
+                        main_unit_list.addElement( new  Unit("Acre","Area",4046.85642,0.0));
                         main_unit_list.addElement( new  Unit("Square foot","Area",0.09290304,0.0));
                         main_unit_list.addElement( new  Unit("Square inch","Area",0.00064516,0.0));
                         main_unit_list.addElement( new  Unit("Square Yard","Area",0.8361274,0.0));
@@ -386,7 +387,7 @@ final class AboutScreen extends MainScreen
 {
         public AboutScreen() {
                 super();
-                add(new RichTextField("BerryUnitConverter 1.6 (c) 2007-2009 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
+                add(new RichTextField("BerryUnitConverter 1.7 (c) 2007-2009 by Daniel Manrique (roadmr@tomechangosubanana.com).\n"));
                 add(new RichTextField("http://tomechangosubanana.com/berryunitconverter.\n"));
                 add(new RichTextField("This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."));
         }

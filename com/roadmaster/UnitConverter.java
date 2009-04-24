@@ -180,12 +180,13 @@ final class UnitConverterMainScreen extends MainScreen
                         main_unit_list.addElement( new  Unit("Square inch","Area",0.00064516,0.0));
                         main_unit_list.addElement( new  Unit("Square Yard","Area",0.8361274,0.0));
 
-                        main_unit_list.addElement( new  Unit("Pascal","Pressure",1.0,0.0));
-                        main_unit_list.addElement( new  Unit("kilopascal","Pressure",1000,0.0));
+                        main_unit_list.addElement( new  Unit("Pascal","Pressure",1.0,0.0)); 
+                        main_unit_list.addElement( new  Unit("Inches water column","Pressure",249.089,0.0));
+                        main_unit_list.addElement( new  Unit("Kilopascal","Pressure",1000,0.0));
                         main_unit_list.addElement( new  Unit("Bar","Pressure",100000,0.0));
-                        main_unit_list.addElement( new  Unit("psi","Pressure",6894.757,0.0));
-                        main_unit_list.addElement( new  Unit("kg/cm2","Pressure",98066.14,0.0));
-                        main_unit_list.addElement( new  Unit("torr","Pressure",133.3224,0.0));
+                        main_unit_list.addElement( new  Unit("Psi","Pressure",6894.757,0.0));
+                        main_unit_list.addElement( new  Unit("Kg/cm2","Pressure",98066.14,0.0));
+                        main_unit_list.addElement( new  Unit("Torr","Pressure",133.3224,0.0));
                         main_unit_list.addElement( new  Unit("Atmospheres","Pressure",101325.0,0.0));
                         main_unit_list.addElement( new  Unit("Cm Mercury","Pressure",1333.224,0.0));
                         main_unit_list.addElement( new  Unit("Inches Mercury","Pressure",3386.388,0.0));
